@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary: #162669;
+    --secondary: #96C1C5;
+    --tertiary: #FFF0DE;
+    --padding: min(17px, 5vw);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

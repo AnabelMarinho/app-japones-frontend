@@ -1,0 +1,113 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    background-color: var(--primary);
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.logo {
+    padding: var(--padding);
+    color: var(--tertiary);
+    font-weight: bold;
+}
+
+/* Top Container Styles */
+
+.top-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--on-primary);
+    padding: 0 20px;
+    width: 100%;
+}
+
+.top-container {
+    background-color: var(--primary);
+    height: 20vh;
+    color: var(--tertiary);
+    margin-bottom: 46px;
+}
+
+.top-container h1 {
+    font-size: 2.5em;
+}
+
+/* Bottom Container Styles */
+
+.bottom-container {
+    background-color: var(--tertiary);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: var(--padding);
+    border-radius: 20px 20px 0 0;
+}
+
+.bottom-container-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 45vh;
+}
+
+.bottom-container .subtitle {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--primary)
+}
+
+a{
+    color: var(--primary);
+}
+
+button {
+    background-color: var(--primary);
+    color: var(--tertiary);
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    width: 80%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Logo Styles */
+.logo-icon {
+    width: 100%;
+    max-width: 50px;
+    height: auto;
+}
+
+.logo-img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+
+.logo-container {
+    padding: var(--padding);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid var(--tertiary);
+    margin-bottom: 16px;
+}
