@@ -5,7 +5,6 @@ objetivo: O objetivo deste projeto é desenvolver uma aplicação para auxiliar 
 ##  utilizadas:
 - Angular
 - Typescript
-- TailwindCSS
 - HTML/CSS
 
 ## Backend
