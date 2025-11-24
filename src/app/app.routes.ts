@@ -3,5 +3,5 @@ import { TestUsuariosComponent } from './test-usuarios/test-usuarios';
 
 export const routes: Routes = [
   { path: 'teste', component: TestUsuariosComponent },
-  { path: '', redirectTo: 'teste', pathMatch: 'full' } // rota padrão
+  { path: '', redirectTo: 'teste', pathMatch: 'full' } 
 ];
