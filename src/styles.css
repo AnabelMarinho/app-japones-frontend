@@ -2,11 +2,44 @@
     --primary: #162669;
     --secondary: #96C1C5;
     --tertiary: #FFF0DE;
+
     --padding: min(17px, 5vw);
+    --space-2xs: clamp(0.25rem, 0.4vw, 0.35rem);   /* ~4–6px */
+    --space-xs:  clamp(0.5rem, 1vw, 0.65rem);      /* ~8–10px */
+    --space-sm:  clamp(0.75rem, 1.5vw, 0.85rem);   /* ~12–14px */
+    --space-md:  clamp(1rem, 2.5vw, 1.1rem);       /* ~16–18px */
+    --space-lg:  clamp(1.5rem, 3.5vw, 1.65rem);    /* ~24–26px */
+    --space-xl:  clamp(2rem, 5vw, 2.2rem);        /* ~32–36px */
+
+    --fonte-primaria: "Instrument Sans", sans-serif;
+    --fonte-titulos: "Holtwood One SC", serif;
+
+    --text-xxs: 0.5rem;      /* 8px */
+    --text-xs: 0.625rem;     /* 10px */
+    --text-sm: 0.75rem;      /* 12px */
+    --text-md: 0.875rem;     /* 14px */
+    --text-base: 1rem;       /* 16px */
+    --text-lg: 1.25rem;      /* 20px */
+    --text-xl: 1.5rem;       /* 24px */
+    --text-2xl: 2rem;        /* 32px */
+
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--fonte-primaria);
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("/fonts/Instrument_Sans/InstrumentSans-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Holtwood One SC";
+  src: url("/fonts/Holtwood_One_SC/HoltwoodOneSC-Regular.ttf") format("truetype");
+  font-style: normal;
 }

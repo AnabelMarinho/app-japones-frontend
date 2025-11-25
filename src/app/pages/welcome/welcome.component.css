@@ -17,6 +17,8 @@ html, body {
     padding: var(--padding);
     color: var(--tertiary);
     font-weight: bold;
+    font-size: var(--text-sm);
+    font-family: var(--fonte-titulos);
 }
 
 /* Top Container Styles */
@@ -28,7 +30,6 @@ html, body {
     justify-content: center;
     text-align: center;
     color: var(--on-primary);
-    padding: 0 20px;
     width: 100%;
 }
 
@@ -36,11 +37,12 @@ html, body {
     background-color: var(--primary);
     height: 20vh;
     color: var(--tertiary);
-    margin-bottom: 46px;
+    margin-bottom: var(--space-lg);
 }
 
 .top-container h1 {
-    font-size: 2.5em;
+    font-size: var(--text-xl);
+    font-family: var(--fonte-titulos);
 }
 
 /* Bottom Container Styles */
@@ -52,7 +54,6 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    text-align: center;
     padding: var(--padding);
     border-radius: 20px 20px 0 0;
 }
@@ -66,21 +67,23 @@ html, body {
 }
 
 .bottom-container .subtitle {
-    font-size: 1.2em;
+    font-size: var(--text-lg);
     font-weight: bold;
-    color: var(--primary)
+    color: var(--primary);
+    text-align: center;
 }
 
 a{
     color: var(--primary);
+    font-size: var(--text-md);
 }
 
 button {
     background-color: var(--primary);
     color: var(--tertiary);
     border: none;
-    padding: 12px;
-    font-size: 16px;
+    padding: var(--space-sm);
+    font-size: var(--text-base);
     font-weight: bold;
     border: none;
     border-radius: 50px;
@@ -92,22 +95,23 @@ button {
 /* Logo Styles */
 .logo-icon {
     width: 100%;
-    max-width: 50px;
+    max-width: 100px;
     height: auto;
+    margin-bottom: var(--space-md);
 }
 
 .logo-img {
     width: 100%;
-    max-width: 100px;
+    max-width: 200px;
     height: auto;
 }
 
-.logo-container {
-    padding: var(--padding);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: 2px solid var(--tertiary);
-    margin-bottom: 16px;
+@media (max-width: 480px) {
+    .logo-icon {
+        max-width: 50px;  
+    }
+
+    .logo-img {
+        max-width: 150px;  
+    }
 }
