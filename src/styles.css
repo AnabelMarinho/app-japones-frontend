@@ -23,6 +23,11 @@
     --text-xl: 1.5rem;       /* 24px */
     --text-2xl: 2rem;        /* 32px */
 
+    --radius-top-rounded: 20px 20px 0 0;
+    --radius-default: 8px;
+    --radius-large: 50px;
+
+    --shadow: 0 10px 20px var(--primary);
 }
 
 * {
@@ -43,3 +48,6 @@
   src: url("/fonts/Holtwood_One_SC/HoltwoodOneSC-Regular.ttf") format("truetype");
   font-style: normal;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

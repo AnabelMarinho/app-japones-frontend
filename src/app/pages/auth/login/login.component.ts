@@ -1,13 +1,14 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { SHARED_IMPORTS } from '../../../shared/shared-imports';
+import { HeaderComponent } from '../../../components/header/header.component';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [FormsModule, HeaderComponent ,SHARED_IMPORTS],
   templateUrl: './login.component.html',
-  //styleUrls: ['./login.component.css'],
+  styleUrls: ['./login.component.css'],
    encapsulation: ViewEncapsulation.None
 })
 export class LoginComponent {}

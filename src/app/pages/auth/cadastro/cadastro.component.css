@@ -1,0 +1,81 @@
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--primary);
+}
+
+/* Form Cadastro Container Styles */
+
+.form-container {
+    background-color: var(--tertiary);
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding);
+    border-radius: var(--radius-top-rounded);
+    overflow: auto;
+}
+
+.form-container-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: var(--space-lg);
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h1{
+    color: var(--primary);
+    font-family: var(--fonte-titulos);
+}
+
+
+a{
+    color: var(--primary);
+    font-size: var(--text-md);
+}
+
+input {
+    width: 80%;
+    max-width: 400px;
+    padding: var(--space-md);
+    font-size: var(--text-base);
+    background-color: var(--secondary);
+    color: var(--primary);
+    border: none;
+    border-radius: var(--radius-default);
+}
+
+input::placeholder {
+    color: var(--primary);
+    opacity: 0.8;
+}
+
+input:focus {
+  outline: var(--primary) solid 2px;
+}
+
+button {
+    background-color: var(--primary);
+    color: var(--tertiary);
+    border: none;
+    padding: var(--space-sm);
+    font-size: var(--text-base);
+    font-weight: bold;
+    border: none;
+    border-radius: var(--radius-default);
+    width: 80%;
+    max-width: 400px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 480px) {
+
+}

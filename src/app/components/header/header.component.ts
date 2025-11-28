@@ -2,11 +2,12 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { SHARED_IMPORTS } from '../../shared/shared-imports';
 
 @Component({
-  selector: 'app-welcome',
+  selector: 'app-header',
   standalone: true,
   imports: [SHARED_IMPORTS],
-  templateUrl: './welcome.component.html',
-  styleUrls: ['./welcome.component.css'],
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class WelcomeComponent {}
+export class HeaderComponent {}
+

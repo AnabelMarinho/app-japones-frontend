@@ -1,16 +1,9 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    background-color: var(--primary);
-}
-
 .main-container {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow: auto;
+    background-color: var(--primary);
 }
 
 .logo {
@@ -29,12 +22,7 @@ html, body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: var(--on-primary);
     width: 100%;
-}
-
-.top-container {
-    background-color: var(--primary);
     height: 20vh;
     color: var(--tertiary);
     margin-bottom: var(--space-lg);
@@ -86,7 +74,7 @@ button {
     font-size: var(--text-base);
     font-weight: bold;
     border: none;
-    border-radius: 50px;
+    border-radius: 20px;
     width: 80%;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -115,3 +103,4 @@ button {
         max-width: 150px;  
     }
 }
+

@@ -1,0 +1,132 @@
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--primary);
+}
+
+/* Header styles */
+
+.header-container{
+    height: 5vh;
+    color: var(--tertiary);
+    margin-bottom: var(--space-lg);
+}
+
+.title-container{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    padding: var(--padding);
+    gap: var(--space-lg);
+}
+/* Form Cadastro Container Styles */
+
+.form-container {
+    background-color: var(--tertiary);
+    height: 80vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-lg);
+    padding: var(--padding);
+    border-radius: var(--radius-top-rounded);
+    overflow: auto;
+}
+
+.form-container-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: var(--space-lg);
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--space-lg);
+}
+
+h1{
+    color: var(--tertiary);
+    font-family: var(--fonte-titulos);
+    text-align: center;
+}
+
+a{
+    color: var(--primary);
+    font-size: var(--text-md);
+    display: flex;
+}
+
+.form-container-content a {
+    width: 80%;
+    max-width: 400px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+input {
+    width: 80%;
+    max-width: 400px;
+    padding: var(--space-md);
+    font-size: var(--text-base);
+    background-color: var(--secondary);
+    color: var(--primary);
+    border: none;
+    border-radius: var(--radius-default);
+}
+
+input::placeholder {
+    color: var(--primary);
+    opacity: 0.8;
+}
+
+input:focus {
+  outline: var(--primary) solid 2px;
+}
+
+.button-login {
+    background-color: var(--primary);
+    color: var(--tertiary);
+    border: none;
+    padding: var(--space-sm);
+    font-size: var(--text-base);
+    font-weight: bold;
+    border: none;
+    border-radius: var(--radius-default);
+    width: 80%;
+    max-width: 400px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.google-button{
+    background-color: var(--secondary);
+    color: var(--primary);
+    border: none;
+    padding: var(--space-sm);
+    font-size: var(--text-base);
+    font-weight: bold;
+    border-radius: var(--radius-default);
+    width: 80%;
+    max-width: 400px;
+}
+
+.login-alt{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.login-alt p{
+    margin-bottom: var(--space-lg);
+}
+
+@media (max-width: 480px) {
+
+}

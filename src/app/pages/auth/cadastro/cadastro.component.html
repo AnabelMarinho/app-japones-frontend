@@ -1,1 +1,20 @@
-<p>Cadastro works!</p>
+<div class="main-container">
+    <app-header>
+      <div header-left>
+        <mat-icon>arrow_back</mat-icon>
+      </div>
+    </app-header>
+    
+    <div class="form-container">
+        <h1>Cadastro</h1>
+        <div class="form-container-content">
+            <input type="text" placeholder="Nome">
+            <input type="text" placeholder="Sobrenome">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Senha">
+            <input type="password" placeholder="Confirmar Senha">
+        </div>
+        <button class="button">Cadastrar</button>
+        <a routerLink="/login"><p>Já tem uma conta? Entre nela</p></a>
+    </div>
+</div>
