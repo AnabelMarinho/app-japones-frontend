@@ -39,15 +39,17 @@
 
 @font-face {
   font-family: "Instrument Sans";
-  src: url("/fonts/Instrument_Sans/InstrumentSans-Regular.ttf") format("truetype");
+  src: url("/assets/fonts/Instrument_Sans/static/InstrumentSans-Regular.ttf") format("truetype");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Holtwood One SC";
-  src: url("/fonts/Holtwood_One_SC/HoltwoodOneSC-Regular.ttf") format("truetype");
+  src: url("/assets/fonts/Holtwood_One_SC/HoltwoodOneSC-Regular.ttf") format("truetype");
   font-style: normal;
 }
 
+
+
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: var(--fonte-primaria); }
