@@ -1,24 +1,24 @@
-<div class="main-container">
+<main class="main-container">
      <app-header>
-      <div header-left>
+      <div header-left (click)="back()">
         <mat-icon>arrow_back</mat-icon>
       </div>
     </app-header>
     <div class="title-container">
         <h1>Login</h1>
     </div>
-    <div class="form-container">
+    <section class="form-container">
         <div class="form-container-content">
-            <input type="email" placeholder="E-mail">
-            <input type="password" placeholder="Senha">
+            <input type="email" placeholder="E-mail" [(ngModel)]="email">
+            <input type="password" placeholder="Senha" [(ngModel)]="senha">
             <a routerLink="/"><p>Esqueci a senha</p></a>
         </div>
-    <button class="button-login">Login</button>
-    
-    <div class="login-alt">
-        <p>Ou</p>
-        <button class="google-button">Entrar com Google</button>
-    </div>
-    <a routerLink="/cadastro"><p>Não possui uma conta? Cadastre-se</p></a>
-    </div>
-</div>
+        <button class="button-login" (click)="login()">Login</button>
+        
+        <div class="login-alt">
+            <span>Ou</span>
+            <button class="google-button">Entrar com Google</button>
+        </div>
+        <a routerLink="/cadastro"><p>Não possui uma conta? Cadastre-se</p></a>
+    </section>
+</main>

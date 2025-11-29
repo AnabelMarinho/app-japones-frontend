@@ -6,14 +6,6 @@
     background-color: var(--primary);
 }
 
-/* Header styles */
-
-.header-container{
-    height: 5vh;
-    color: var(--tertiary);
-    margin-bottom: var(--space-lg);
-}
-
 .title-container{
     height: 15vh;
     display: flex;
@@ -25,7 +17,7 @@
 
 .form-container {
     background-color: var(--tertiary);
-    height: 80vh; 
+    height: 100%; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,7 +115,7 @@ input:focus {
     margin-bottom: var(--space-lg);
 }
 
-.login-alt p{
+.login-alt span{
     margin-bottom: var(--space-lg);
 }
 
