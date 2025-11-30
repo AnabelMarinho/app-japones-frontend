@@ -37,7 +37,7 @@ export class LoginComponent {
     this.authService.login(usuario).subscribe({
       next: res => {
         alert('Login realizado com sucesso!');
-        this.router.navigate(['/']); 
+        this.router.navigate(['/home']); 
       },
       error: err => {
         alert('Erro: ' + err.error);

@@ -2,6 +2,7 @@
     --primary: #162669;
     --secondary: #96C1C5;
     --tertiary: #FFF0DE;
+    --oppacity-color: #233572;
 
     --padding: min(17px, 5vw);
     --space-2xs: clamp(0.25rem, 0.4vw, 0.35rem);   /* ~4–6px */
@@ -27,7 +28,7 @@
     --radius-default: 8px;
     --radius-large: 50px;
 
-    --shadow: 0 10px 20px var(--primary);
+    --shadow: 0 4px 4px var(--oppacity-color);
 }
 
 * {

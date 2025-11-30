@@ -1,0 +1,45 @@
+.lesson-card {
+  width: 100%;
+  background-color: transparent;
+  border-radius: var(--radius-default);
+  padding: var(--space-sm);
+  border: 2px solid var(--secondary);
+  box-shadow: var(--shadow);
+}
+
+.lesson-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.hiragana-card-mini {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary);
+  color: var(--tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-lg);
+  font-weight: bold;
+}
+
+.text-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--primary);
+}
+
+.title {
+  font-size: var(--text-md);
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: var(--text-sm);
+  opacity: 0.8;
+}

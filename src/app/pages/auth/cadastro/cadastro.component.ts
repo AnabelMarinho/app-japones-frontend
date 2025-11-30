@@ -45,7 +45,7 @@ export class CadastroComponent {
     this.authService.cadastro(usuario).subscribe({
       next: res => {
         alert('Cadastro realizado com sucesso!');
-        this.router.navigate(['/']); 
+        this.router.navigate(['/home']); 
       },
       error: err => {
         alert('Erro: ' + err.error);

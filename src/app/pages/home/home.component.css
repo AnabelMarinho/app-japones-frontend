@@ -1,0 +1,123 @@
+main {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--primary);
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* Header */
+
+header{
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    flex-shrink: 0;
+}
+
+.header-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conta-usuario{
+    display: flex;
+    align-items: center;
+    background-color: var(--oppacity-color);
+    border-radius: var(--radius-default);
+    gap: 8px;
+    width: fit-content;
+    padding: var(--space-2xs);
+
+    p{
+        color: var(--tertiary);
+        font-size: var(--text-md);
+
+    }
+}
+.conta-usuario-img{
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+.nivel-usuario{
+    color: var(--tertiary);
+    font-size: var(--text-sm);
+}
+
+h1 {
+    color: var(--tertiary);
+    font-family: var(--fonte-titulos);
+    font-size: var(--text-lg);
+    max-width: 80%;
+}
+
+/* Conteúdo principal */
+
+.home-container {
+    background-color: var(--tertiary);
+    flex: 1; 
+    padding: var(--padding);
+    border-radius: var(--radius-top-rounded);
+}
+
+.categorias {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-sm);
+}
+
+.categorias button{
+    color: var(--tertiary);
+    background-color: var(--primary);
+    border: none;
+    border-radius: var(--radius-default);
+    padding: var(--space-sm);
+    width: 100%;
+    font-weight: bold;
+}
+
+h3 {
+    margin-bottom: var(--space-sm);
+    margin-top: var(--space-sm);
+    color: var(--primary);
+}
+
+/* Revisão */ 
+
+.card-revisao {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary);
+    padding: var(--space-lg);
+}
+
+.card-text{
+    color: var(--tertiary);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 50%;
+
+    p{
+        font-size: var(--text-xs);
+    }
+    
+}
+
+.card-revisao button {
+    color: var(--tertiary);
+    width: 100%;
+    background-color: var(--primary);
+    background-color: var(--primary);
+    border: none;
+    border-radius: var(--radius-default);
+    padding: var(--space-xs);
+    font-weight: bold;
+}

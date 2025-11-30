@@ -1,0 +1,11 @@
+<div class="progresso-texto">
+  <p>Meu progresso completo</p>
+  <span>{{ progresso }}%</span>
+</div>
+
+<div class="barra-progresso" [ngClass]="tipo">
+  <div
+    class="barra-preenchida"
+    [style.width.%]="progresso">
+  </div>
+</div>

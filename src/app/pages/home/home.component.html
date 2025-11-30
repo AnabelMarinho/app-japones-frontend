@@ -1,1 +1,42 @@
-<p>home</p>
+<main>
+    <header>
+        <div class="header-top">
+        <div class="conta-usuario">
+            <img src="https://i.pinimg.com/736x/40/30/c1/4030c1abca4d33d53a21c19a5a0ce823.jpg" class="conta-usuario-img" />
+            <p>Anabel Marinho</p>
+        </div>
+        <img src="\assets\img\logo nome.svg">
+        </div>
+        <div class="nivel-usuario">
+         <span>Nível 2 -- Aprendiz</span>
+        </div>
+        <app-barra-progresso [progresso]="22"></app-barra-progresso>
+        <h1>O que vamos estudar hoje?</h1>
+    </header>
+
+    <section class="home-container">
+        <h3>Continuar: <span>Hiragana -- Lição 3</span></h3>
+        <app-continue-lesson-card
+        simbolo="あ"
+        titulo="Hiragana -- Lição 3"
+        subtitulo="Próxima etapa: Vogais あ い う え お"
+        [progresso]="66">
+        </app-continue-lesson-card>
+
+        <h3>Categorias de estudo</h3>
+        <div class="categorias">
+            <button>Hiragana あ</button>
+            <button>Katakana ア</button>
+            <button>Kanji 日</button>
+        </div>
+
+        <h3>Revisão do dia</h3>
+        <div class="card-revisao">
+            <app-flashcard-mini texto="きょう" tipo="default"></app-flashcard-mini>
+            <div class="card-text">
+                <p>Reveja o que você aprendeu nos últimos dias</p>
+                <button>Revisão</button>
+            </div>
+        </div>
+    </section>
+</main>

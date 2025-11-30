@@ -1,0 +1,28 @@
+.flashcard-mini { 
+  width: 100px;
+  height: 100px;
+  border-radius: var(--radius-default);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  font-size: var(--text-lg);
+  font-weight: bold;
+
+  box-shadow: var(--shadow);
+}
+
+/* claro */
+.flashcard-mini.default {
+  color: var(--primary);
+  background-color: var(--tertiary);
+}
+
+/* escuro */
+.flashcard-mini.primary {
+  color: var(--tertiary);
+  background-color: var(--primary);
+  border: 2px solid var(--tertiary);
+}
