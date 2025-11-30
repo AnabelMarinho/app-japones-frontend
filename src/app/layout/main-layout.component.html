@@ -1,1 +1,33 @@
-<router-outlet></router-outlet>
+<div class="layout-container">
+  <main class="conteudo">
+    <router-outlet></router-outlet>
+  </main>
+
+  <!-- Barra inferior -->
+  <nav class="bottom-nav">
+    <a routerLink="/home" routerLinkActive="ativo">
+      <mat-icon>home</mat-icon>
+      <small>Home</small>
+    </a>
+
+    <a routerLink="/licoes" routerLinkActive="ativo">
+      <mat-icon>book</mat-icon>
+      <small>Lições</small>
+    </a>
+
+    <a routerLink="/vocabulario" routerLinkActive="ativo">
+      <mat-icon>add_box</mat-icon>
+      <small>Vocabulário</small>
+    </a>
+
+    <a routerLink="/revisao" routerLinkActive="ativo">
+      <mat-icon>check_circle</mat-icon>
+      <small>Revisão</small>
+    </a>
+
+    <a routerLink="/perfil" routerLinkActive="ativo">
+      <mat-icon>person</mat-icon>
+      <small>Perfil</small>
+    </a>
+  </nav>
+</div>

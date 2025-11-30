@@ -1,10 +1,8 @@
 main {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     background-color: var(--primary);
-    height: 100vh;
-    overflow-y: auto;
+    height: 100%;
 }
 
 /* Header */
@@ -66,6 +64,7 @@ h1 {
     flex: 1; 
     padding: var(--padding);
     border-radius: var(--radius-top-rounded);
+    overflow: visible;
 }
 
 .categorias {
@@ -130,3 +129,4 @@ h3 {
     gap: var(--space-xs);
     color: var(--primary);
 }
+

@@ -1,11 +1,10 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { CommonModule } from '@angular/common'; 
-import { RouterModule } from '@angular/router';
+import { SHARED_IMPORTS } from '../shared/shared-imports';
 
 @Component({
   selector: 'main-layout',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [SHARED_IMPORTS],
   templateUrl: './main-layout.component.html',
   styleUrls: ['./main-layout.component.css'],
   encapsulation: ViewEncapsulation.None
