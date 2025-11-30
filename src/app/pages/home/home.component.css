@@ -10,10 +10,11 @@ main {
 /* Header */
 
 header{
+    height: 30vh;
     padding: var(--padding);
     display: flex;
     flex-direction: column;
-    gap: var(--space-sm);
+    justify-content: space-between;
     flex-shrink: 0;
 }
 
@@ -48,6 +49,7 @@ header{
 .nivel-usuario{
     color: var(--tertiary);
     font-size: var(--text-sm);
+    margin-top: var(--space-xs);
 }
 
 h1 {
@@ -120,4 +122,11 @@ h3 {
     border-radius: var(--radius-default);
     padding: var(--space-xs);
     font-weight: bold;
+}
+
+.palavra-dia-titulo{
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    color: var(--primary);
 }

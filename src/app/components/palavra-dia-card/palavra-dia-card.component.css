@@ -1,0 +1,60 @@
+.palavra-card {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--primary);
+    border-radius: var(--radius-default);
+    padding: var(--space-lg);
+    justify-content: space-between;
+    max-width: 500px;
+    color: var(--primary)
+}
+
+.palavra-botao{
+    color: var(--primary);
+    width: 100%;
+    background-color: var(--secondary);
+    border: 2px solid var(--primary);
+    border-radius: var(--radius-default);
+    padding: var(--space-xs);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-xs);
+    margin-bottom: var(--space-xs);
+    font-size: var(--text-lg);
+}
+
+.palavra-info{
+    margin-bottom: var(--space-sm);
+}
+
+img {
+    width: 100px;
+    height: 100x;
+}
+
+.pronuncia {
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.romaji {
+  font-style: italic;
+}
+
+.exemplo .jp {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .palavra-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img {
+        margin-top: var(--space-sm);
+    }
+}

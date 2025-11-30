@@ -18,6 +18,7 @@
   margin-bottom: var(--space-2xs);
 }
 
+/* claro */
 .default {
   background-color: var(--primary);
   border: 2px solid var(--tertiary);
@@ -27,7 +28,7 @@
   background-color: var(--tertiary);
 }
 
-
+/* escuro */
 .primary {
   background-color: transparent;
   border: 2px solid var(--primary);

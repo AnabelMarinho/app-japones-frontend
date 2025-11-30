@@ -1,0 +1,27 @@
+<div class="palavra-card" [ngClass]="tipo">
+  <div class="container-left">
+    <div class="palavra-info">
+      <button class="palavra-botao">
+        {{ palavraJp }} — {{ significado }}
+        <mat-icon>volume_up</mat-icon>
+      </button>
+    </div>
+    
+    <div class="pronuncia">
+      <span class="leitura">{{ leituraJp }}</span>
+      —
+      <span class="romaji">{{ romaji }}</span>
+    </div>
+
+
+    <div class="exemplo">
+      <p class="jp">{{ fraseJp }}</p>
+      <p class="romaji">{{ fraseRomaji }}</p>
+      <p class="pt">{{ frasePt }}</p>
+    </div>
+  </div>
+
+  <div class="container-right">
+    <img src="/logo.svg" alt="icon" />
+  </div>
+</div>

@@ -1,6 +1,8 @@
 <main>
     <header>
+        <div>
         <div class="header-top">
+
         <div class="conta-usuario">
             <img src="https://i.pinimg.com/736x/40/30/c1/4030c1abca4d33d53a21c19a5a0ce823.jpg" class="conta-usuario-img" />
             <p>Anabel Marinho</p>
@@ -9,6 +11,7 @@
         </div>
         <div class="nivel-usuario">
          <span>Nível 2 -- Aprendiz</span>
+        </div>
         </div>
         <app-barra-progresso [progresso]="22"></app-barra-progresso>
         <h1>O que vamos estudar hoje?</h1>
@@ -38,5 +41,21 @@
                 <button>Revisão</button>
             </div>
         </div>
+        
+        <div class="palavra-dia-titulo">
+        <h3>Palavra do dia</h3>
+        <mat-icon>light_mode</mat-icon>
+        </div>
+        <app-palavra-dia-card 
+        palavraJp="山"
+        significado="Montanha"
+        leituraJp="やま"
+        romaji="Yama"
+        fraseJp="やま は たかい です。"
+        fraseRomaji="Yama wa takai desu."
+        frasePt="A montanha é alta."
+        tipo="default">
+        </app-palavra-dia-card>
+
     </section>
 </main>
